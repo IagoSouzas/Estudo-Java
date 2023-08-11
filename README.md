@@ -6,6 +6,10 @@
   <li> Fundamentos de java </li>
   <li> Estrutura e controles de operadores </li>
   <li> Orientação a Objetos </li>
+  <li> Wrappers e Boxing </li>
+  <li> Array </li>
+  <li> Construtor, Pacotes e Visibilidade </li>
+  <li> Encapsulamento </li>
 </ul>
 
 <hr>
