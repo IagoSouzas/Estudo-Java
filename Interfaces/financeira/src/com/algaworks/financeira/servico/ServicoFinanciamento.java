@@ -5,13 +5,15 @@ public class ServicoFinanciamento{
 
     public void solicitarFinanciamento(ClienteFinanciavel clienteFinanciavel, double valorSolicitado){
         double limiteAprovado = clienteFinanciavel.calcularLimiteAprovado();
+        double jurosCalculado = clienteFinanciavel.calcularJuros(valorSolicitado);
 
         if (limiteAprovado < valorSolicitado){
             throw new RuntimeException(String.format(
                "Financiamento não aprovado. Limite máximo de %.2f", limiteAprovado));
         }
 
-        System.out.printf("Debug: Financiamento aprovado. Limite máximo de %.2f%n", limiteAprovado);
+        System.out.printf("Debug: Financiamento aprovado no valor de R$%.2f com juros de %.2f%%. Limite máximo de %.2f%n",
+                valorSolicitado, jurosCalculado, limiteAprovado);
 
     }
 

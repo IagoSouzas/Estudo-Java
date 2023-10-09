@@ -13,7 +13,7 @@ public class Main {
         var parceiro = new ParceiroFinanceiro( "Capital ABC", 2_000000,10);
         var funcionario = new Funcionario("iago",10_000);
 
-        servicoFinanciamento.solicitarFinanciamento(funcionario,80_000);
+        servicoFinanciamento.solicitarFinanciamento(funcionario,40_000);
 
 
 
